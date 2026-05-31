@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso</title>
+    <link rel="stylesheet" href="Calculadora de peso.css">
+    <link rel="icon" type="image/x-icon" href="img/calculadora.png">
+    <script src="calculadora de peso.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Peso</h1>
+
+    <label for="peso">Peso (kg): </label>
+    <input type="number" placeholder="Digite seu peso" id="peso" min="2.1" max="635" required>
+    
+    <label for="altura">Altura (m): </label>
+    <input type="number" placeholder="Digite sua altura" id="altura" min="0.50" max="2.72" required>
+    
+    <button onclick="calcularIMC()" id="resultado"> Calcular IMC </button>
+
+    <input type="button" value="Reset" id="reset" onclick="document.getElementById('peso').value = ''; document.getElementById('altura').value = '';">
+</body>
+</html>
